@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Server",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn start"
+    },
+    {
+      "name": "Debug Server Tests",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn test:debug"
+    }
+  ]
+}

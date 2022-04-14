@@ -1,0 +1,20 @@
+{
+  "name": "functional",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only src/dev.ts",
+    "test:debug": "ts-node-dev --transpile-only ./node_modules/jest/bin/jest --runInBand --coverage=false",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/lodash": "^4.14.181",
+    "jest": "^27.5.1",
+    "lodash": "^4.17.21",
+    "ts-jest": "^27.1.4"
+  }
+}

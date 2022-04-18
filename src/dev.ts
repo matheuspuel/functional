@@ -7,16 +7,21 @@ import * as f from './index'
 //   .value()
 
 const raw = [
-  { id: 1, descricao: 3 },
-  { id: 2, descricao: 'a' },
-  { id: 3, descricao: null },
+  { id: 4, descricao: {} },
+  { id: 5, descricao: null },
   { id: 4, descricao: undefined },
-  { id: 5, descricao: {} },
+  { id: 5, descricao: 4 },
+  { id: 2, descricao: 4 },
+  { id: 3, descricao: -13 },
+  { id: 1, descricao: true },
+  { id: 1, descricao: 'true' },
+  { id: 1, descricao: 'True' },
+  { id: 1, descricao: '' },
 ]
 
 const res = f.pipe(raw)(
   f.map(g => g),
-  f.sortBy(g => g.descricao),
+  f.sortBy([g => g.descricao, { desc: g => g.id }]),
 )
 
 console.log(res)

@@ -1,4 +1,4 @@
-import { compare } from '../../src/helpers/compare'
+import { compare } from '../helpers/compare'
 
 function baseFunction<T>(values: T[], fns: Fn<T>[]): T[] {
   return values.sort((a, b) =>

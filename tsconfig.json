@@ -4,14 +4,19 @@
   },
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "dist",
-    "sourceMap": true,
-    "target": "ES6",
+    "outDir": "lib",
+    "target": "ES5",
     "lib": ["esnext"],
+    "module": "commonjs",
+    "incremental": true,
+    "sourceMap": true,
+    "declaration": true,
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noUncheckedIndexedAccess": true
-  }
+  },
+  "include": ["src/*"]
 }

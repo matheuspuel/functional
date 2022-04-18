@@ -1,6 +1,7 @@
 {
   "name": "functional",
   "version": "0.0.1",
+  "main": "lib/index.js",
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only src/dev.ts",
     "test:debug": "ts-node-dev --transpile-only ./node_modules/jest/bin/jest --runInBand --coverage=false",

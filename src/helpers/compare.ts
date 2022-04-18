@@ -48,7 +48,5 @@ export function compare(a: unknown, b: unknown) {
       ? 1
       : 0
   }
-  if (Array.isArray(a) && Array.isArray(b)) {
-  }
   return 0
 }

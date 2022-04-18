@@ -22,6 +22,15 @@ const raw = [
 const res = f.pipe(raw)(
   f.map(g => g),
   f.sortBy([g => g.descricao, { desc: g => g.id }]),
+  f.find(
+    (o): o is typeof o & { descricao: string } =>
+      typeof o.descricao === 'string',
+  ),
+  // f.filter(
+  //   (o): o is typeof o & { descricao: string } =>
+  //     typeof o.descricao === 'string',
+  // ),
+  // o => o?.descricao,
 )
 
 console.log(res)

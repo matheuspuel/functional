@@ -4,8 +4,8 @@
   },
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "lib",
-    "target": "ES5",
+    "outDir": "./lib",
+    "target": "es6",
     "lib": ["esnext"],
     "module": "commonjs",
     "incremental": true,

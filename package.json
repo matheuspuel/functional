@@ -1,13 +1,29 @@
 {
   "name": "@matheuspuel/functional",
   "version": "0.0.2",
+  "author": "Matheus Michalski Puel",
   "license": "MIT",
   "private": false,
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "description": "Functions to help with functional programming.",
+  "homepage": "https://github.com/matheuspuel/functional#readme",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheuspuel/functional.git"
+  },
+  "keywords": [
+    "typescript",
+    "utilities",
+    "functional-programming"
+  ],
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only src/dev.ts",
-    "build": "npx tsc",
+    "build": "tsc",
     "test:debug": "ts-node-dev --transpile-only ./node_modules/jest/bin/jest --runInBand --coverage=false",
     "test:coverage": "jest --coverage"
   },

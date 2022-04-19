@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import * as f from './index'
+import f from './index'
 
 type Obj = {
   id: number
@@ -19,7 +19,7 @@ const raw: Record<string, Obj> = {
   11: { id: 11, descricao: '' },
 }
 
-const res = f.pipe(raw)(
+const res = f(raw)(
   f.values,
   // f.reduce(0, (acc, cur) => acc + cur.id),
   f.reduce(undefined as Obj | undefined, (acc, cur) =>

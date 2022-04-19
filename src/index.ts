@@ -1,24 +1,6 @@
-export * from './functions/add'
-export * from './functions/concat'
-export * from './functions/identity'
-export * from './functions/filter'
-export * from './functions/find'
-export * from './functions/groupBy'
-export * from './functions/keyBy'
-export * from './functions/keys'
-export * from './functions/map'
-export * from './functions/mapValues'
-export * from './functions/max'
-export * from './functions/maxBy'
-export * from './functions/min'
-export * from './functions/minBy'
-export * from './functions/omit'
-export * from './functions/pick'
-export * from './functions/pickBy'
-export * from './functions/pipe'
-export * from './functions/reduce'
-export * from './functions/size'
-export * from './functions/sortBy'
-export * from './functions/sum'
-export * from './functions/take'
-export * from './functions/values'
+import * as functions from './functionsIndex'
+
+let root = functions.pipe as typeof functions.pipe & typeof functions
+Object.assign(root, functions)
+
+export default root

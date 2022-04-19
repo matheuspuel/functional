@@ -4,8 +4,10 @@
   "license": "MIT",
   "private": false,
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only src/dev.ts",
+    "build": "npx tsc",
     "test:debug": "ts-node-dev --transpile-only ./node_modules/jest/bin/jest --runInBand --coverage=false",
     "test:coverage": "jest --coverage"
   },

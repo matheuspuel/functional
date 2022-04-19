@@ -5,8 +5,9 @@ export function takeRight<T>(
   quantity?: number,
 ): T[] | ((values: T[]) => T[]) {
   if (quantity === undefined) {
-    return values => values.slice(-valuesOrQuantity as number)
+    const quantity = valuesOrQuantity as number
+    return values => (quantity ? values.slice(-quantity as number) : [])
   } else {
-    return (valuesOrQuantity as T[]).slice(-quantity)
+    return quantity ? (valuesOrQuantity as T[]).slice(-quantity) : []
   }
 }

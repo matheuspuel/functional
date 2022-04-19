@@ -4,13 +4,13 @@
   },
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "./lib",
     "target": "es6",
     "lib": ["esnext"],
     "module": "commonjs",
-    "incremental": true,
+    "outDir": "./build",
     "sourceMap": true,
     "declaration": true,
+    "incremental": true,
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -18,5 +18,5 @@
     "strict": true,
     "noUncheckedIndexedAccess": true
   },
-  "include": ["src/*"]
+  "include": ["src/**/*"]
 }

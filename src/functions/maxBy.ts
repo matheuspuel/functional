@@ -11,8 +11,8 @@ function baseFunction<T>(values: T[], fn: Fn<T>): T | undefined {
 
 type Fn<T> = (item: T) => unknown
 
-export function maxBy<T>(values: T[], fn: Fn<T>): T
-export function maxBy<T>(fn: Fn<T>): (values: T[]) => T
+export function maxBy<T>(values: T[], fn: Fn<T>): T | undefined
+export function maxBy<T>(fn: Fn<T>): (values: T[]) => T | undefined
 export function maxBy<T>(
   valuesOrFn: T[] | Fn<T>,
   fnOrNull?: Fn<T>,

@@ -1,5 +1,5 @@
 import f from '../../index'
 
-it.skip('should ', () => {
+it.todo('tests', () => {
   expect(f)
 })

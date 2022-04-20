@@ -22,7 +22,6 @@
     "functional-programming"
   ],
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only src/dev.ts",
     "build": "tsc --project tsconfig.prod.json",
     "test": "jest",
     "test:debug": "ts-node-dev --transpile-only ./node_modules/jest/bin/jest --runInBand --coverage=false",

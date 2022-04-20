@@ -9,4 +9,5 @@ it('should remove the specified number of elements from the end', () => {
   expect(f.dropRight(list, 4)).toEqual([])
   expect(f.dropRight([], 4)).toEqual([])
   expect(f.dropRight(2)(list)).toEqual([5])
+  expect(f.dropRight(0)(list)).toEqual([5, 6, 7])
 })

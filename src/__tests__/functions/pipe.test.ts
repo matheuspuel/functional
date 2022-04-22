@@ -1,5 +1,3 @@
 import f from '../../index'
 
-it.todo('tests', () => {
-  expect(f)
-})
+it.todo('tests')

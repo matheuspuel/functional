@@ -26,7 +26,7 @@
     "test": "jest --coverage",
     "test:debug": "ts-node-dev --transpile-only ./node_modules/jest/bin/jest --runInBand --coverage=false",
     "preversion": "yarn test",
-    "postversion": "git push --tags && cross-env yarn publish --new-version $npm_package_version --tag $npm_package_version && git push"
+    "postversion": "git push --tags && cross-env yarn publish --tag $npm_package_version && git push"
   },
   "dependencies": {},
   "devDependencies": {

@@ -26,12 +26,13 @@
     "test": "jest --coverage",
     "test:debug": "ts-node-dev --transpile-only ./node_modules/jest/bin/jest --runInBand --coverage=false",
     "preversion": "yarn test",
-    "postversion": "git push --tags && yarn publish --tag $npm_package_version && git push"
+    "postversion": "git push --tags && cross-env yarn publish --new-version $npm_package_version --tag $npm_package_version && git push"
   },
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/lodash": "^4.14.181",
+    "cross-env": "^7.0.3",
     "jest": "^27.5.1",
     "lodash": "^4.17.21",
     "ts-jest": "^27.1.4",
